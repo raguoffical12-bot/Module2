@@ -1,35 +1,42 @@
-# 🔺 Looping(Patterns)-Pascal's Triangle Generator in Python
-
-This project demonstrates a simple Python program to generate **Pascal’s Triangle**, where the number of rows is provided by the user.
-
----
-
-## 🎯 Aim
-
-To write a Python program that generates **Pascal's Triangle** using numbers. The number of rows is accepted from the user.
+# Exp.No:2d
+## LOOPING PATTERNS - print inverted pyramid pattern of numbers Get the input for the number of rows  to be displayed .
 
 ---
 
-## 🧠 Algorithm
-
-1. Start the program.
-2. Input the number of rows from the user.
-3. Loop from 0 to the number of rows.
-4. For each row:
-   - Print appropriate spaces to shape the triangle.
-   - Compute values using the formula:  
-     \[
-     C(n, k) = \frac{n!}{k!(n-k)!}
-     \]
-5. Print all rows of Pascal’s Triangle.
-6. End the program.
+### AIM  
+To Write the program to print inverted pyramid pattern of numbers Get the input for the number of rows  to be displayed .
 
 ---
 
-## 🧪 Program
-Add Code Here
+### ALGORITHM
 
-## Sample Output
+1. Prompt the user to enter the number of rows for the inverted pyramid pattern.  
+2. Read the input and convert it to an integer.  
+3. Start a loop from the input number down to 1.  
+4. In each iteration, print spaces equal to the difference between the total number of rows and the current row number.  
+5. After the spaces, print numbers starting from 1 up to `2 * current row number - 1`.  
+6. Move to the next line after printing each row.  
+7. Repeat the process until all rows are printed.
 
-## Result
+---
 
+### PROGRAM
+```
+#Reg.No:212223070021
+#Name:Ragunandhan S
+rows = int(input())
+b = 0
+
+for i in range(rows, 0, -1):
+    b += 1
+    for j in range(1, i + 1):
+        print(b,end=' ')
+    print()
+
+```
+
+### OUTPUT
+![image](https://github.com/user-attachments/assets/46186539-c001-4783-a840-3bb4fa9021c1)
+
+### RESULT
+Thus the above program is executed successfully.
